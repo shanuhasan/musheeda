@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>School | @yield('title')</title>
+    <title>@yield('title') | Admin Panel | Musheeda Solutions</title>
 
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
