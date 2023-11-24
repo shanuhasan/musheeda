@@ -126,8 +126,9 @@ h6 {
 
 #nav .nav-link:hover,
 #nav .nav-link.active {
-    color: #4F84C4;
-    background: #ffffff;
+    color: #000000;
+    /* color: #4F84C4; */
+    /* background: #ffffff; */
     transition: none;
     font-weight: bold;
 }
@@ -1096,7 +1097,7 @@ h6 {
 }
 
 .footer .footer-top .footer-links ul li {
-    border-bottom: 1px solid #ffffff;
+    /* border-bottom: 1px solid #ffffff; */
     padding: 7px 0;
 }
 

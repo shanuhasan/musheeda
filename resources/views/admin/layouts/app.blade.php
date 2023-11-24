@@ -69,10 +69,10 @@
     <!-- ChartJS -->
     <script src="{{ asset('admin-assets/plugins/chart.js/Chart.min.js') }}"></script>
     <!-- Sparkline -->
-    <script src="{{ asset('admin-assets/plugins/sparklines/sparkline.js') }}"></script>
+    {{-- <script src="{{ asset('admin-assets/plugins/sparklines/sparkline.js') }}"></script> --}}
     <!-- JQVMap -->
     <script src="{{ asset('admin-assets/plugins/jqvmap/jquery.vmap.min.js') }}"></script>
-    <script src="{{ asset('admin-assets/plugins/jqvmap/maps/jquery.vmap.usa.js') }}"></script>
+    {{-- <script src="{{ asset('admin-assets/plugins/jqvmap/maps/jquery.vmap.usa.js') }}"></script> --}}
     <!-- jQuery Knob Chart -->
     <script src="{{ asset('admin-assets/plugins/jquery-knob/jquery.knob.min.js') }}"></script>
     <!-- daterangepicker -->
@@ -90,7 +90,16 @@
     <!-- AdminLTE for demo purposes -->
     <script src="{{ asset('admin-assets/dist/js/demo.js') }}"></script>
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-    <script src="{{ asset('admin-assets/dist/js/pages/dashboard.js') }}"></script>
+    {{-- <script src="{{ asset('admin-assets/dist/js/pages/dashboard.js') }}"></script> --}}
+
+    <script>
+        $(function() {
+            // Summernote
+            $('.summernote').summernote();
+        });
+    </script>
+    @yield('script')
+
 </body>
 
 </html>

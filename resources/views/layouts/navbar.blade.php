@@ -13,10 +13,10 @@
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav ml-auto">
                     <a href="{{ route('front.home') }}" class="nav-item nav-link @yield('home')">Home</a>
-                    {{-- <a href="about.html" class="nav-item nav-link">About</a>
+                    <a href="about.html" class="nav-item nav-link">About</a>
                     <a href="service.html" class="nav-item nav-link">Service</a>
                     <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
-                    <a href="pricing.html" class="nav-item nav-link">Pricing</a> --}}
+                    {{-- <a href="pricing.html" class="nav-item nav-link">Pricing</a> --}}
                     {{-- <div class="nav-item dropdown">
                         <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
                         <div class="dropdown-menu">

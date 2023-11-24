@@ -33,6 +33,13 @@
                 </li>
 
                 <li class="nav-item">
+                    <a href="{{ route('admin.page.index') }}" class="nav-link @yield('pages')">
+                        <i class="nav-icon fas fa-book"></i>
+                        <p>Pages</p>
+                    </a>
+                </li>
+
+                <li class="nav-item">
                     <form method="POST" action="{{ route('admin.logout') }}">
                         @csrf
                         <a href="{{ route('admin.logout') }}"
