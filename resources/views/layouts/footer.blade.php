@@ -29,8 +29,8 @@
                     <h4>Contact Us</h4>
                     <p>
                         C 194, Shaheen Bagh<br>
-                        Okhla, New Delhi<br>
-                        India <br>
+                        Okhla, 110025<br>
+                        New Delhi, India <br>
                         <strong>Phone:</strong> +917533825583<br>
                         <strong>Email:</strong> info@musheeda.com<br>
                     </p>
