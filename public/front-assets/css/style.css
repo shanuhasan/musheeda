@@ -129,6 +129,7 @@ h6 {
     color: #4F84C4;
     background: #ffffff;
     transition: none;
+    font-weight: bold;
 }
 
 #nav .dropdown-menu {
@@ -139,11 +140,12 @@ h6 {
 }
 
 @media (min-width: 768px) {
+
     #nav,
     #nav .navbar {
-        background: rgba(0, 0, 0, 1) !important;
+        background: rgb(49, 139, 243) !important;
     }
-    
+
     #nav a.nav-link {
         padding: 8px 15px;
         font-size: 15px;
@@ -151,20 +153,21 @@ h6 {
     }
 }
 
-@media (max-width: 768px) {   
+@media (max-width: 768px) {
+
     #nav,
     #nav .navbar {
-        background: rgba(0, 0, 0, 1) !important;
+        background: rgb(49, 139, 243) !important;
     }
-    
+
     #nav a.nav-link {
         padding: 5px;
     }
-    
+
     #nav .dropdown-menu {
         box-shadow: none;
     }
-    
+
     #nav .container-fluid {
         padding: 0;
     }
@@ -507,7 +510,7 @@ h6 {
     font-size: 12px;
     margin-top: 5px;
     text-transform: uppercase;
-    margin-bottom:0;
+    margin-bottom: 0;
 }
 
 .pricing .price-details {
@@ -561,17 +564,17 @@ h6 {
     background: #4F84C4;
 }
 
-.pricing .features-price .price-plan p{
-    color:#FFFFFF;
+.pricing .features-price .price-plan p {
+    color: #FFFFFF;
 }
 
-.pricing .features-price .price-plan .price-amount, 
+.pricing .features-price .price-plan .price-amount,
 .pricing .features-price .price-plan .price-amount span {
     color: #ffffff;
 }
 
 .pricing .features-price .price-plan .price-title {
-    color:#ffffff;
+    color: #ffffff;
 }
 
 
@@ -676,7 +679,7 @@ h6 {
     position: relative;
     background: #000000;
     overflow: hidden;
-    
+
 }
 
 .portfolio .portfolio-item .link-preview,
@@ -772,7 +775,7 @@ h6 {
     position: relative;
     background: #000000;
     overflow: hidden;
-    
+
 }
 
 .team .team-item .team-social {
@@ -1024,8 +1027,8 @@ h6 {
 /**************************************/
 .footer {
     position: relative;
-    padding: 0 0 30px 0;
-    background: #000000;
+    /* padding: 0 0 30px 0; */
+    background: rgb(49, 139, 243) !important;
 }
 
 .footer .footer-top {
@@ -1149,14 +1152,16 @@ h6 {
 .footer .credit,
 .footer .copyright {
     text-align: center;
-    padding-top: 30px;
+    padding: 10px;
+    color: #ffffff;
+    font-weight: bold;
 }
 
 @media (min-width: 768px) {
     .footer .credit {
         text-align: right;
     }
-    
+
     .footer .copyright {
         text-align: left;
     }

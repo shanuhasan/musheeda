@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\DashboardController;
 
@@ -22,9 +23,7 @@ Route::get('/clear-cache', function () {
     return "Cache cleared successfully";
 });
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index'])->name('front.home');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
