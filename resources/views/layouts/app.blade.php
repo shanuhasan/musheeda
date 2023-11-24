@@ -24,6 +24,7 @@
 
     <!-- Main Stylesheet -->
     <link href="{{ asset('front-assets/css/style.css') }}" rel="stylesheet">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 
 <body>
@@ -48,6 +49,14 @@
 
     <!-- Main Javascript -->
     <script src="{{ asset('front-assets/js/main.js') }}"></script>
+
+    <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+    </script>
 
 </body>
 

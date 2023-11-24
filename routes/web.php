@@ -26,7 +26,9 @@ Route::get('/clear-cache', function () {
     return "Cache cleared successfully";
 });
 
-Route::get('/', [HomeController::class, 'index'])->name('front.home');
+Route::get('/', [HomeController::class, 'index'])->name('home.index');
+Route::get('/{slug}',[HomeController::class,'page'])->name('home.page');
+Route::post('/contact-email',[HomeController::class,'sendContactEmail'])->name('home.sendContactEmail');
 
 Route::get('/dashboard', function () {
     return view('dashboard');

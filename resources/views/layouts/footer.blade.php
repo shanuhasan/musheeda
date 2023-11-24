@@ -6,7 +6,12 @@
                 <div class="col-lg-6 col-md-6 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><a href="{{ route('front.home') }}">Home</a></li>
+                        <li><a href="{{ route('home.index') }}">Home</a></li>
+                        @if (getStaticPages()->isNotEmpty())
+                            @foreach (getStaticPages() as $item)
+                                <li><a href="{{ route('home.page', $item->slug) }}">{{ $item->name }}</a></li>
+                            @endforeach
+                        @endif
                         {{-- <li><i class="ion-ios-arrow-forward"></i> <a href="#">About us</a></li>
                         <li><i class="ion-ios-arrow-forward"></i> <a href="#">Our services</a></li>
                         <li><i class="ion-ios-arrow-forward"></i> <a href="#">Terms & condition</a></li>
@@ -38,7 +43,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 copyright">
-                Copyright &copy; 2024 <a href="{{ route('front.home') }}">Musheeda Solutions</a>. All Rights Reserved
+                Copyright &copy; 2024 <a href="{{ route('home.index') }}">Musheeda Solutions</a>. All Rights Reserved
             </div>
         </div>
     </div>
