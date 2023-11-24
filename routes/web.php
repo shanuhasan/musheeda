@@ -15,6 +15,13 @@ use App\Http\Controllers\Admin\DashboardController;
 |
 */
 
+Route::get('/clear-cache', function () {
+    Artisan::call('cache:clear');
+    Artisan::call('route:clear');
+ 
+    return "Cache cleared successfully";
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
