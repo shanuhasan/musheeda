@@ -6,20 +6,23 @@
     <div class="header">
         <div id="header-slider" class="carousel slide" data-ride="carousel">
             <!-- Indicators -->
-            <ul class="carousel-indicators">
+            {{-- <ul class="carousel-indicators">
                 <li data-target="#header-slider" data-slide-to="0" class="active"></li>
                 <li data-target="#header-slider" data-slide-to="1"></li>
                 <li data-target="#header-slider" data-slide-to="2"></li>
-            </ul>
+            </ul> --}}
 
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="row align-items-center">
                         <div class="col-md-6">
                             <div class="carousel-content">
-                                <h2>Lorem ipsum</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur</p>
-                                <a class="btn" href="">Read More</a>
+                                <h2>Musheeda Software
+                                    Development Company</h2>
+                                <p>We transform your brand to best show who you are.
+                                    We reinvent web application standards that best meet your business needs and
+                                    enhance your digital presence.</p>
+                                {{-- <a class="btn" href="">Read More</a> --}}
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -29,7 +32,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                {{-- <div class="carousel-item">
                     <div class="row align-items-center">
                         <div class="col-md-6">
                             <div class="carousel-content">
@@ -60,15 +63,15 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> --}}
             </div>
 
-            <a class="carousel-control-prev" href="#header-slider" data-slide="prev">
+            {{-- <a class="carousel-control-prev" href="#header-slider" data-slide="prev">
                 <i class="ion-ios-arrow-back"></i>
             </a>
             <a class="carousel-control-next" href="#header-slider" data-slide="next">
                 <i class="ion-ios-arrow-forward"></i>
-            </a>
+            </a> --}}
         </div>
     </div>
     <!-- Header End-->
@@ -78,9 +81,9 @@
         <div class="container">
             <div class="section-header">
                 <h2>About Us</h2>
-                <p>
+                {{-- <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
-                </p>
+                </p> --}}
             </div>
 
             <div class="row align-items-center">
@@ -91,13 +94,10 @@
                     <div class="about-content">
                         <h2>Welcome to Our Site</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum rutrum ligula.
-                            Integer ac porttitor mi. In finibus vehicula aliquet. Vestibulum et velit placerat pretium
-                            lorem Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum rutrum
-                            ligula. Integer ac porttitor mi. In finibus vehicula aliquet. Vestibulum et velit placerat
-                            pretium lorem
-                        </p>
-                        <a class="btn" href="#">Read More</a>
+                            Musheeda is an innovative web & mobile applications development company multifolded in India. We
+                            believe in team effort and customer first approach, Musheeda provides quality services and
+                            solutions in all industry specific domains, with clients across the globe.
+                            <br><a class="btn" href="{{ url('/about-us') }}">Read More</a>
                     </div>
                 </div>
             </div>
@@ -108,13 +108,13 @@
                         <img src="{{ asset('front-assets/img/about-story.jpg') }}" alt="" class="img-fluid">
                     </div>
                     <div class="about-content">
-                        <h2>Our Story</h2>
+                        <h2>Our Mission</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum rutrum ligula.
-                            Integer ac porttitor mi. In finibus vehicula aliquet. Vestibulum et velit placerat pretium
-                            lorem
+                            Our Mission is to empower our clients with technologies for optimizing their operations and
+                            miximizing their performance in the competitive world . We strive to ensure client satisfaction
+                            by offering cost effective world-class services exceeding their expectations.
                         </p>
-                        <a class="btn" href="#">Read More</a>
+                        <a class="btn" href="javascript:void(0);">Read More</a>
                     </div>
                 </div>
                 <div class="col-md-6">
@@ -122,13 +122,12 @@
                         <img src="{{ asset('front-assets/img/about-goal.jpg') }}" alt="" class="img-fluid">
                     </div>
                     <div class="about-content">
-                        <h2>Our Goal</h2>
+                        <h2>Our VISION</h2>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras condimentum rutrum ligula.
-                            Integer ac porttitor mi. In finibus vehicula aliquet. Vestibulum et velit placerat pretium
-                            lorem
+                            We envisage a world that is safer, easier and more meaningful We intend to do this through
+                            greater know how, path breaking technology and a humane approch.
                         </p>
-                        <a class="btn" href="#">Read More</a>
+                        <a class="btn" href="javascript:void(0);">Read More</a>
                     </div>
                 </div>
             </div>
@@ -142,7 +141,7 @@
             <div class="section-header">
                 <h2>Services</h2>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
+                    We offer a wide spectrum of services for you to choose from and to help organizations work better.
                 </p>
             </div>
             <div class="row">
@@ -190,50 +189,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="ion-ios-desktop"></i>
-                        </div>
-                        <div class="service-detail">
-                            <h4><a href="">Web Design</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="ion-ios-laptop"></i>
-                        </div>
-                        <div class="service-detail">
-                            <h4><a href="">Web Development</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="ion-ios-tablet-portrait"></i>
-                        </div>
-                        <div class="service-detail">
-                            <h4><a href="">App Design</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="ion-ios-phone-portrait"></i>
-                        </div>
-                        <div class="service-detail">
-                            <h4><a href="">App Development</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
-                        </div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </div>
@@ -244,11 +200,11 @@
         <div class="container text-center">
             <div class="section-header">
                 <h2>Call to Action</h2>
-                <p>
+                {{-- <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
-                </p>
+                </p> --}}
             </div>
-            <a class="btn" href="#">Call To Action</a>
+            <a class="btn" href="javascript:void(0);">Call To Action</a>
         </div>
     </div>
     <!-- Call To Action End -->
@@ -327,9 +283,9 @@
         <div class="container">
             <div class="section-header">
                 <h2>Our Skills</h2>
-                <p>
+                {{-- <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
-                </p>
+                </p> --}}
             </div>
 
             <div class="row">
@@ -438,9 +394,9 @@
         <div class="container">
             <div class="section-header">
                 <h2>Our Portfolio</h2>
-                <p>
+                {{-- <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
-                </p>
+                </p> --}}
             </div>
 
             <div class="row portfolio-container">
@@ -543,9 +499,9 @@
         <div class="container">
             <div class="section-header">
                 <h2>Meet our team</h2>
-                <p>
+                {{-- <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
-                </p>
+                </p> --}}
             </div>
 
             <div class="row">
@@ -622,9 +578,9 @@
         <div class="container">
             <div class="section-header">
                 <h2>Reviews</h2>
-                <p>
+                {{-- <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
-                </p>
+                </p> --}}
             </div>
 
             <div class="owl-carousel testimonials-carousel">
@@ -698,9 +654,9 @@
         <div class="container">
             <div class="section-header">
                 <h2>Our Clients</h2>
-                <p>
+                {{-- <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
-                </p>
+                </p> --}}
             </div>
 
             <div class="owl-carousel clients-carousel">
@@ -723,9 +679,9 @@
         <div class="container">
             <div class="section-header">
                 <h2>Contact Us</h2>
-                <p>
+                {{-- <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
-                </p>
+                </p> --}}
             </div>
 
             <div class="row">
