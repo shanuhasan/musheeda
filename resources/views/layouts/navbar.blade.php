@@ -35,12 +35,16 @@
 
         <div class="collapse navbar-collapse" id="ftco-nav">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a href="javascript:void(0);" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="javascript:void(0);" class="nav-link">About</a></li>
-                <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Services</a></li>
-                <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Case Study</a></li>
-                <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Blog</a></li>
-                <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Contact us</a></li>
+                <li class="nav-item @yield('home')"><a href="{{ route('home.index') }}" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item @yield('about')"><a href="{{ route('home.about') }}" class="nav-link">About Us</a>
+                </li>
+                <li class="nav-item @yield('services')"><a href="{{ route('home.services') }}"
+                        class="nav-link">Services</a></li>
+                <li class="nav-item @yield('blogs')"><a href="{{ route('home.blogs') }}" class="nav-link">Blog</a>
+                </li>
+                <li class="nav-item @yield('contact')"><a href="{{ route('home.contact') }}" class="nav-link">Contact
+                        Us</a></li>
             </ul>
         </div>
     </div>

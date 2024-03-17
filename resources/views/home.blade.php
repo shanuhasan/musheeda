@@ -10,15 +10,14 @@
                 <div class="col-md-8 ftco-animate mt-5 pt-md-5" data-scrollax=" properties: { translateY: '70%' }">
                     <div class="row">
                         <div class="col-md-7">
-                            <p class="mb-4 pl-md-5 line" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">A
-                                small river named
-                                Duden flows by their place and supplies</p>
+                            <p class="mb-4 pl-md-5 line" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
+                            </p>
                         </div>
                     </div>
-                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Experienced for
-                        <br>Every Kinds of ITSolution
+                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Top-Rated Software
+                        Development Company
                     </h1>
-                    <p><a href="#" class="btn btn-primary px-4 py-3">Read more</a></p>
+                    <p><a href="{{ route('home.about') }}" class="btn btn-primary px-4 py-3">Read more</a></p>
                 </div>
             </div>
         </div>
@@ -66,8 +65,9 @@
         <div class="container">
             <div class="row justify-content-center pb-5">
                 <div class="col-lg-6 heading-section text-center ftco-animate">
-                    <h2 class="mb-4">More than <span>35+</span> years we provide <span>IT Solution</span></h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                    <h2 class="mb-4">Our Expertise</h2>
+                    <p>We have a team of diverse technical experts and developers with a skill
+                        set of the most advanced technologies and frameworks.</p>
                 </div>
             </div>
             <div class="row">
@@ -78,7 +78,9 @@
                         </div>
                         <div class="text">
                             <h3>Web Development</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                            <p>Our developers are skilled in the most advanced backend technologies to form a robust
+                                software base. We guarantee you fully scalable, secure, and interactive web applications
+                                matching your business requirements.
                             </p>
                         </div>
                     </div>
@@ -92,8 +94,9 @@
                             <span class="flaticon-secure"></span>
                         </div>
                         <div class="text">
-                            <h3>Server Security</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                            <h3>Front-end & Full Stack</h3>
+                            <p>We use the latest front-end and full-stack solutions to meet the rapidly changing dynamics of
+                                your business needs. We assure you of interactive web fronts to keep you ahead in your game.
                             </p>
                         </div>
                     </div>
@@ -112,7 +115,7 @@
                 <div class="col-md-6 p-3 pl-md-5 py-5 bg-primary">
                     <div class="row justify-content-start pb-3">
                         <div class="col-md-12 heading-section heading-section-white ftco-animate">
-                            <h2 class="mb-4">Consult us here in <span>ITSolution</span></h2>
+                            <h2 class="mb-4">Consult Us</h2>
                             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
                             </p>
                         </div>
@@ -160,7 +163,7 @@
         <div class="container">
             <div class="row justify-content-center pb-5">
                 <div class="col-md-6 heading-section text-center ftco-animate">
-                    <h2 class="mb-4">Our Exclusive <span>IT Solution</span> Services</h2>
+                    <h2 class="mb-4">Our Exclusive Services</h2>
                 </div>
             </div>
             <div class="row d-flex no-gutters">
@@ -564,8 +567,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 half ftco-animate">
-                    <h2 class="mb-4">Don't hesitate to contact us</h2>
-                    <form action="#" class="appointment">
+                    <h2 class="mb-4">Contact Us</h2>
+                    <form action="" class="appointment contactForm">
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -574,7 +577,7 @@
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Email">
+                                    <input type="email" class="form-control" placeholder="Email">
                                 </div>
                             </div>
                             <div class="col-md-12">
