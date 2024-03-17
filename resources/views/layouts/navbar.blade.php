@@ -1,9 +1,57 @@
-<!-- Nav Start -->
-<div id="nav" class="nav-sticky">
+<div class="wrap">
+    <div class="container">
+        <div class="row justify-content-between">
+            <div class="col-12 col-md d-flex align-items-center">
+                <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="javascript:void(0);">+91
+                        7533825583</a>
+                    or <span class="mailus">Email us:</span> <a href="javascript:void(0);">info@musheeda.com</a></p>
+            </div>
+            <div class="col-12 col-md d-flex justify-content-md-end">
+                <div class="social-media">
+                    <p class="mb-0 d-flex">
+                        <a href="https://www.facebook.com/profile.php?id=100092385110895" target="_blank"
+                            class="d-flex align-items-center justify-content-center"><span class="fa fa-facebook"><i
+                                    class="sr-only">Facebook</i></span></a>
+                        <a href="https://twitter.com/musheeda9" target="_blank"
+                            class="d-flex align-items-center justify-content-center"><span class="fa fa-twitter"><i
+                                    class="sr-only">Twitter</i></span></a>
+                        <a href="https://www.instagram.com/musheeda9/" target="_blank"
+                            class="d-flex align-items-center justify-content-center"><span class="fa fa-instagram"><i
+                                    class="sr-only">Instagram</i></span></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+    <div class="container">
+        <a class="navbar-brand" href="index.html">MUSHEEDA<span> Solutions</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+            aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="oi oi-menu"></span> Menu
+        </button>
+
+        <div class="collapse navbar-collapse" id="ftco-nav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a href="javascript:void(0);" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="javascript:void(0);" class="nav-link">About</a></li>
+                <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Services</a></li>
+                <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Case Study</a></li>
+                <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Blog</a></li>
+                <li class="nav-item"><a href="javascript:void(0);" class="nav-link">Contact us</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- END nav -->
+
+
+{{-- <div id="nav" class="nav-sticky">
     <div class="container-fluid">
         <nav class="navbar navbar-expand-md bg-dark navbar-dark">
             <a href="{{ route('home.index') }}" class="navbar-brand">
-                {{-- <img src="{{ asset('front-assets/img/logo.png') }}" alt="Logo"> --}}
                 <strong>MUSHEEDA SOLUTIONS</strong>
             </a>
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
@@ -19,24 +67,9 @@
                                 class="nav-item nav-link @yield($item->name)">{{ $item->name }}</a>
                         @endforeach
                     @endif
-                    {{-- <a href="about.html" class="nav-item nav-link">About</a>
-                    <a href="service.html" class="nav-item nav-link">Service</a>
-                    <a href="portfolio.html" class="nav-item nav-link">Portfolio</a> --}}
-                    {{-- <a href="pricing.html" class="nav-item nav-link">Pricing</a> --}}
-                    {{-- <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu">
-                            <a href="skill.html" class="dropdown-item">Skills</a>
-                            <a href="team.html" class="dropdown-item">Team Members</a>
-                            <a href="review.html" class="dropdown-item">Reviews</a>
-                            <a href="client.html" class="dropdown-item">Clients</a>
-                            <a href="single.html" class="dropdown-item">Single Page</a>
-                        </div>
-                    </div>
-                    <a href="contact.html" class="nav-item nav-link">Contact</a> --}}
+
                 </div>
             </div>
         </nav>
     </div>
-</div>
-<!-- Nav End -->
+</div> --}}

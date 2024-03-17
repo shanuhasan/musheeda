@@ -2,719 +2,613 @@
 @section('title', 'Home')
 @section('home', 'active')
 @section('content')
-    <!-- Header Start-->
-    <div class="header">
-        <div id="header-slider" class="carousel slide" data-ride="carousel">
-            <!-- Indicators -->
-            {{-- <ul class="carousel-indicators">
-                <li data-target="#header-slider" data-slide-to="0" class="active"></li>
-                <li data-target="#header-slider" data-slide-to="1"></li>
-                <li data-target="#header-slider" data-slide-to="2"></li>
-            </ul> --}}
-
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <div class="carousel-content">
-                                <h2>Musheeda Software
-                                    Development Company</h2>
-                                <p>We transform your brand to best show who you are.
-                                    We reinvent web application standards that best meet your business needs and
-                                    enhance your digital presence.</p>
-                                {{-- <a class="btn" href="">Read More</a> --}}
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="carousel-img">
-                                <img src="{{ asset('front-assets/img/slider-1.png') }}" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                {{-- <div class="carousel-item">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <div class="carousel-content">
-                                <h2>Nulla tristique</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur</p>
-                                <a class="btn" href="">Read More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="carousel-img">
-                                <img src="{{ asset('front-assets/img/slider-2.png') }}" alt="Image">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="carousel-item">
-                    <div class="row align-items-center">
-                        <div class="col-md-6">
-                            <div class="carousel-content">
-                                <h2>Pellentesque rutrum</h2>
-                                <p>Lorem ipsum dolor sit amet consectetur</p>
-                                <a class="btn" href="">Read More</a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="carousel-img">
-                                <img src="{{ asset('front-assets/img/slider-3.png') }}" alt="Images">
-                            </div>
-                        </div>
-                    </div>
-                </div> --}}
-            </div>
-
-            {{-- <a class="carousel-control-prev" href="#header-slider" data-slide="prev">
-                <i class="ion-ios-arrow-back"></i>
-            </a>
-            <a class="carousel-control-next" href="#header-slider" data-slide="next">
-                <i class="ion-ios-arrow-forward"></i>
-            </a> --}}
-        </div>
-    </div>
-    <!-- Header End-->
-
-    <!-- About Start-->
-    <div class="about">
+    <div class="hero-wrap js-fullheight" style="background-image: url('{{ asset('front-assets/images/bg_1.jpg') }}');"
+        data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
         <div class="container">
-            <div class="section-header">
-                <h2>About Us</h2>
-                {{-- <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
-                </p> --}}
-            </div>
-
-            <div class="row align-items-center">
-                <div class="col-md-12">
-                    <div class="about-img">
-                        <img src="{{ asset('front-assets/img/about.jpg') }}" alt="" class="img-fluid">
+            <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
+                <div class="col-md-8 ftco-animate mt-5 pt-md-5" data-scrollax=" properties: { translateY: '70%' }">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <p class="mb-4 pl-md-5 line" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">A
+                                small river named
+                                Duden flows by their place and supplies</p>
+                        </div>
                     </div>
-                    <div class="about-content">
-                        <h2>Welcome to Our Site</h2>
-                        <p>
-                            Musheeda is an innovative web & mobile applications development company multifolded in India. We
-                            believe in team effort and customer first approach, Musheeda provides quality services and
-                            solutions in all industry specific domains, with clients across the globe.
-                            <br><a class="btn" href="{{ url('/about-us') }}">Read More</a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="about-img">
-                        <img src="{{ asset('front-assets/img/about-story.jpg') }}" alt="" class="img-fluid">
-                    </div>
-                    <div class="about-content">
-                        <h2>Our Mission</h2>
-                        <p>
-                            Our Mission is to empower our clients with technologies for optimizing their operations and
-                            miximizing their performance in the competitive world . We strive to ensure client satisfaction
-                            by offering cost effective world-class services exceeding their expectations.
-                        </p>
-                        <a class="btn" href="javascript:void(0);">Read More</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="about-img">
-                        <img src="{{ asset('front-assets/img/about-goal.jpg') }}" alt="" class="img-fluid">
-                    </div>
-                    <div class="about-content">
-                        <h2>Our VISION</h2>
-                        <p>
-                            We envisage a world that is safer, easier and more meaningful We intend to do this through
-                            greater know how, path breaking technology and a humane approch.
-                        </p>
-                        <a class="btn" href="javascript:void(0);">Read More</a>
-                    </div>
+                    <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Experienced for
+                        <br>Every Kinds of ITSolution
+                    </h1>
+                    <p><a href="#" class="btn btn-primary px-4 py-3">Read more</a></p>
                 </div>
             </div>
         </div>
     </div>
-    <!-- About End -->
 
-    <!-- Service Start -->
-    <div class="service">
+    <section class="ftco-intro">
         <div class="container">
-            <div class="section-header">
-                <h2>Services</h2>
-                <p>
-                    We offer a wide spectrum of services for you to choose from and to help organizations work better.
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="ion-ios-desktop"></i>
-                        </div>
-                        <div class="service-detail">
-                            <h4><a href="">Web Design</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="ion-ios-laptop"></i>
-                        </div>
-                        <div class="service-detail">
-                            <h4><a href="">Web Development</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="ion-ios-tablet-portrait"></i>
-                        </div>
-                        <div class="service-detail">
-                            <h4><a href="">App Design</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3">
-                    <div class="service-item">
-                        <div class="service-icon">
-                            <i class="ion-ios-phone-portrait"></i>
-                        </div>
-                        <div class="service-detail">
-                            <h4><a href="">App Development</a></h4>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium.</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
-
-    <!-- Call To Action Start -->
-    <div class="call-to-action">
-        <div class="container text-center">
-            <div class="section-header">
-                <h2>Call to Action</h2>
-                {{-- <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
-                </p> --}}
-            </div>
-            <a class="btn" href="javascript:void(0);">Call To Action</a>
-        </div>
-    </div>
-    <!-- Call To Action End -->
-
-    <!--Pricing start-->
-    {{-- <div class="pricing">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Pricing</h2>
-                <p>
-                    Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="price-content">
-                        <div class="price-plan">
-                            <i class="ion-md-home"></i>
-                            <p class="price-title">Silver</p>
-                            <h2 class="price-amount"><span>$</span>9<span>.99</span><span> / m</span></h2>
-                        </div>
-                        <ul class="price-details">
-                            <li><i class="ion-md-checkmark"></i><strong>HTML5</strong> and <strong>CSS3</strong></li>
-                            <li><i class="ion-md-checkmark"></i><strong>Bootstrap 4</strong></li>
-                            <li><i class="ion-md-checkmark"></i><strong>Well-commented</strong> code</li>
-                            <li><i class="ion-md-close"></i><strong>IonIcons</strong> integrated</li>
-                            <li><i class="ion-md-close"></i>Free <strong>Google Font</strong> integrated</li>
-                            <li><i class="ion-md-close"></i><strong>Responsive</strong> design</li>
-                        </ul>
-                        <a href="#" class="btn mian-btn price-btn">Buy Now</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="price-content features-price">
-                        <div class="price-plan">
-                            <i class="ion-md-star"></i>
-                            <p class="price-title">Gold</p>
-                            <h2 class="price-amount"><span>$</span>19<span>.99</span><span> / m</span></h2>
-                        </div>
-                        <ul class="price-details">
-                            <li><i class="ion-md-checkmark"></i><strong>HTML5</strong> and <strong>CSS3</strong></li>
-                            <li><i class="ion-md-checkmark"></i><strong>Bootstrap 4</strong></li>
-                            <li><i class="ion-md-checkmark"></i><strong>Well-commented</strong> code</li>
-                            <li><i class="ion-md-checkmark"></i><strong>IonIcons</strong> integrated</li>
-                            <li><i class="ion-md-checkmark"></i>Free <strong>Google Font</strong> integrated</li>
-                            <li><i class="ion-md-close"></i><strong>Responsive</strong> design</li>
-                        </ul>
-                        <a href="#" class="btn mian-btn price-btn features-price-btn">Buy Now</a>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="price-content">
-                        <div class="price-plan">
-                            <i class="ion-md-gift"></i>
-                            <p class="price-title">Platinum</p>
-                            <h2 class="price-amount"><span>$</span>29<span>.99</span><span> / m</span></h2>
-                        </div>
-                        <ul class="price-details">
-                            <li><i class="ion-md-checkmark"></i><strong>HTML5</strong> and <strong>CSS3</strong></li>
-                            <li><i class="ion-md-checkmark"></i><strong>Bootstrap 4</strong></li>
-                            <li><i class="ion-md-checkmark"></i><strong>Well-commented</strong> code</li>
-                            <li><i class="ion-md-checkmark"></i><strong>IonIcons</strong> integrated</li>
-                            <li><i class="ion-md-checkmark"></i>Free <strong>Google Font</strong> integrated</li>
-                            <li><i class="ion-md-checkmark"></i><strong>Responsive</strong> design</li>
-                        </ul>
-                        <a href="#" class="btn mian-btn price-btn">Buy Now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> --}}
-    <!--Pricing End-->
-
-    <!-- Skills Start-->
-    <div class="skills">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Skills</h2>
-                {{-- <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
-                </p> --}}
-            </div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="skill-item">
-                        <h3>Front End Skills</h3>
-                        <div class="skill-name">
-                            <p>HTML</p>
-                            <p>85%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="skill-name">
-                            <p>CSS</p>
-                            <p>95%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="skill-name">
-                            <p>jQuery</p>
-                            <p>80%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="skill-item">
-                        <h3>Back End Skills</h3>
-                        <div class="skill-name">
-                            <p>PHP</p>
-                            <p>90%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="skill-name">
-                            <p>Laravel</p>
-                            <p>85%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-
-                        <div class="skill-name">
-                            <p>MySQL</p>
-                            <p>95%</p>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0"
-                                aria-valuemax="100"></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Skills End-->
-
-
-    <!-- Counters Start-->
-    <div class="counters">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-6 text-center">
-                    <i class="ion-md-person"></i>
-                    <h2 data-toggle="counter-up">100</h2>
-                    <p>Our Staffs</p>
-                </div>
-
-                <div class="col-lg-3 col-6 text-center">
-                    <i class="ion-md-people"></i>
-                    <h2 data-toggle="counter-up">200</h2>
-                    <p>Our Clients</p>
-                </div>
-
-                <div class="col-lg-3 col-6 text-center">
-                    <i class="ion-md-checkmark"></i>
-                    <h2 data-toggle="counter-up">300</h2>
-                    <p>Completed Projects</p>
-                </div>
-
-                <div class="col-lg-3 col-6 text-center">
-                    <i class="ion-md-trending-up"></i>
-                    <h2 data-toggle="counter-up">400</h2>
-                    <p>Running Projects</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Counters End-->
-
-    <!-- Portfolio Start -->
-    <div class="portfolio">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Portfolio</h2>
-                {{-- <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
-                </p> --}}
-            </div>
-
-            <div class="row portfolio-container">
-                <div class="col-lg-4 col-md-6 portfolio-item">
-                    <div class="portfolio-img">
-                        <img src="{{ asset('front-assets/img/portfolio-1.jpg') }}" class="img-fluid" alt="Portfolio">
-                        <a href="{{ asset('front-assets/img/portfolio-1.jpg') }}" data-lightbox="portfolio"
-                            data-title="Lorem ipsum dolor" class="link-preview" title="Preview"><i
-                                class="ion-md-eye"></i></a>
-                        <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
-                    </div>
-
-                    <div class="portfolio-info">
-                        <h3>Lorem ipsum dolor</h3>
-                        <p>Web Design</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item">
-                    <div class="portfolio-img">
-                        <img src="{{ asset('front-assets/img/portfolio-2.jpg') }}" class="img-fluid" alt="Portfolio">
-                        <a href="{{ asset('front-assets/img/portfolio-2.jpg') }}" class="link-preview"
-                            data-lightbox="portfolio" data-title="Nulla ullamcorper pharetra" title="Preview"><i
-                                class="ion-md-eye"></i></a>
-                        <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
-                    </div>
-
-                    <div class="portfolio-info">
-                        <h3>Nulla ullamcorper pharetra</h3>
-                        <p>Web Development</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item">
-                    <div class="portfolio-img">
-                        <img src="{{ asset('front-assets/img/portfolio-3.jpg') }}" class="img-fluid" alt="Portfolio">
-                        <a href="{{ asset('front-assets/img/portfolio-3.jpg') }}" class="link-preview"
-                            data-lightbox="portfolio" data-title="Phasellus eget dictum" title="Preview"><i
-                                class="ion-md-eye"></i></a>
-                        <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
-                    </div>
-
-                    <div class="portfolio-info">
-                        <h3>Phasellus eget dictum</h3>
-                        <p>App Design</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item">
-                    <div class="portfolio-img">
-                        <img src="{{ asset('front-assets/img/portfolio-4.jpg') }}" class="img-fluid" alt="Portfolio">
-                        <a href="{{ asset('front-assets/img/portfolio-4.jpg') }}" data-lightbox="portfolio"
-                            data-title="Lorem ipsum dolor" class="link-preview" title="Preview"><i
-                                class="ion-md-eye"></i></a>
-                        <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
-                    </div>
-
-                    <div class="portfolio-info">
-                        <h3>Donec mattis vestibulum</h3>
-                        <p>App Development</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item">
-                    <div class="portfolio-img">
-                        <img src="{{ asset('front-assets/img/portfolio-5.jpg') }}" class="img-fluid" alt="Portfolio">
-                        <a href="{{ asset('front-assets/img/portfolio-5.jpg') }}" class="link-preview"
-                            data-lightbox="portfolio" data-title="Nulla ullamcorper pharetra" title="Preview"><i
-                                class="ion-md-eye"></i></a>
-                        <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
-                    </div>
-
-                    <div class="portfolio-info">
-                        <h3>Pellentesque ullamcorper</h3>
-                        <p>Web Design</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 portfolio-item">
-                    <div class="portfolio-img">
-                        <img src="{{ asset('front-assets/img/portfolio-6.jpg') }}" class="img-fluid" alt="Portfolio">
-                        <a href="{{ asset('front-assets/img/portfolio-6.jpg') }}" class="link-preview"
-                            data-lightbox="portfolio" data-title="Phasellus eget dictum" title="Preview"><i
-                                class="ion-md-eye"></i></a>
-                        <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
-                    </div>
-
-                    <div class="portfolio-info">
-                        <h3>Sed pretium sapien</h3>
-                        <p>Web Development</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Portfolio End -->
-
-    <!-- Team Start -->
-    <div class="team">
-        <div class="container">
-            <div class="section-header">
-                <h2>Meet our team</h2>
-                {{-- <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
-                </p> --}}
-            </div>
-
-            <div class="row">
-                <div class="col-lg-3 col-sm-6 team-item">
-                    <div class="team-img">
-                        <img src="{{ asset('front-assets/img/team-1.jpg') }}" class="img-fluid" alt="Team Member">
-                        <div class="team-social">
-                            <a href="#"><i class="ion-logo-twitter"></i></a>
-                            <a href="#"><i class="ion-logo-facebook"></i></a>
-                            <a href="#"><i class="ion-logo-linkedin"></i></a>
-                            <a href="#"><i class="ion-logo-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h3>John P. Haight</h3>
-                        <p>Web Designer</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 team-item">
-                    <div class="team-img">
-                        <img src="{{ asset('front-assets/img/team-2.jpg') }}" class="img-fluid" alt="Team Member">
-                        <div class="team-social">
-                            <a href="#"><i class="ion-logo-twitter"></i></a>
-                            <a href="#"><i class="ion-logo-facebook"></i></a>
-                            <a href="#"><i class="ion-logo-linkedin"></i></a>
-                            <a href="#"><i class="ion-logo-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h3>David R. Bernard</h3>
-                        <p>Web Developer</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 team-item">
-                    <div class="team-img">
-                        <img src="{{ asset('front-assets/img/team-3.jpg') }}" class="img-fluid" alt="Team Member">
-                        <div class="team-social">
-                            <a href="#"><i class="ion-logo-twitter"></i></a>
-                            <a href="#"><i class="ion-logo-facebook"></i></a>
-                            <a href="#"><i class="ion-logo-linkedin"></i></a>
-                            <a href="#"><i class="ion-logo-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h3>Dana A. Thomas</h3>
-                        <p>Apps Developer</p>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-sm-6 team-item">
-                    <div class="team-img">
-                        <img src="{{ asset('front-assets/img/team-4.jpg') }}" class="img-fluid" alt="Team Member">
-                        <div class="team-social">
-                            <a href="#"><i class="ion-logo-twitter"></i></a>
-                            <a href="#"><i class="ion-logo-facebook"></i></a>
-                            <a href="#"><i class="ion-logo-linkedin"></i></a>
-                            <a href="#"><i class="ion-logo-instagram"></i></a>
-                        </div>
-                    </div>
-                    <div class="team-info">
-                        <h3>Ava M. Proctor</h3>
-                        <p>Apps Developer</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Team End -->
-
-    <!-- Testimonials Start -->
-    <div class="testimonials">
-        <div class="container">
-            <div class="section-header">
-                <h2>Reviews</h2>
-                {{-- <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
-                </p> --}}
-            </div>
-
-            <div class="owl-carousel testimonials-carousel">
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="{{ asset('front-assets/img/testimonial-1.jpg') }}" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Anna M. Brzezinski</h3>
-                        <h4>businesswoman</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Maecenas dictum vel
-                        </p>
-                    </div>
-                </div>
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="{{ asset('front-assets/img/testimonial-2.jpg') }}" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Shirley H. Lee</h3>
-                        <h4>businesswoman</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Maecenas dictum vel
-                        </p>
-                    </div>
-                </div>
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="{{ asset('front-assets/img/testimonial-3.jpg') }}" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Kerry E. Thomas</h3>
-                        <h4>businesswoman</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Maecenas dictum vel
-                        </p>
-                    </div>
-                </div>
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="{{ asset('front-assets/img/testimonial-4.jpg') }}" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Kerry E. Thomas</h3>
-                        <h4>businesswoman</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Maecenas dictum vel
-                        </p>
-                    </div>
-                </div>
-                <div class="testimonial-item row align-items-center">
-                    <div class="testimonial-img">
-                        <img src="{{ asset('front-assets/img/testimonial-5.jpg') }}" alt="Testimonial image">
-                    </div>
-                    <div class="testimonial-text">
-                        <h3>Kerry E. Thomas</h3>
-                        <h4>businesswoman</h4>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipiscing elit. Maecenas dictum vel
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Testimonials End -->
-
-    <!-- Clients Start -->
-    <div class="clients">
-        <div class="container">
-            <div class="section-header">
-                <h2>Our Clients</h2>
-                {{-- <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
-                </p> --}}
-            </div>
-
-            <div class="owl-carousel clients-carousel">
-                <img src="{{ asset('front-assets/img/client-1.jpg') }}" alt="Client Logo">
-                <img src="{{ asset('front-assets/img/client-2.jpg') }}" alt="Client Logo">
-                <img src="{{ asset('front-assets/img/client-3.jpg') }}" alt="Client Logo">
-                <img src="{{ asset('front-assets/img/client-4.jpg') }}" alt="Client Logo">
-                <img src="{{ asset('front-assets/img/client-5.jpg') }}" alt="Client Logo">
-                <img src="{{ asset('front-assets/img/client-6.jpg') }}" alt="Client Logo">
-                <img src="{{ asset('front-assets/img/client-7.jpg') }}" alt="Client Logo">
-                <img src="{{ asset('front-assets/img/client-8.jpg') }}" alt="Client Logo">
-            </div>
-
-        </div>
-    </div>
-    <!-- Clients End -->
-
-    <!-- Contact Start -->
-    <div class="contact">
-        <div class="container">
-            <div class="section-header">
-                <h2>Contact Us</h2>
-                {{-- <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet
-                </p> --}}
-            </div>
-
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="form">
-                        <form class="contactForm">
-                            <div class="form-row">
-                                <div class="form-group col-sm-6">
-                                    <input type="text" class="form-control" placeholder="Your Name" />
-                                </div>
-                                <div class="form-group col-sm-6">
-                                    <input type="email" class="form-control" placeholder="Your Email" />
+            <div class="row justify-content-end">
+                <div class="col-md-7">
+                    <div class="row no-gutters d-flex align-items-stretch">
+                        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                            <div class="services-1">
+                                <div class="line"></div>
+                                <div class="icon"><span class="flaticon-bolt"></span></div>
+                                <div class="media-body">
+                                    <h3 class="heading mb-3">Information Technology Consultancy</h3>
                                 </div>
                             </div>
-                            <div class="form-group">
-                                <input type="text" class="form-control" placeholder="Subject" />
+                        </div>
+                        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                            <div class="services-1 color-1">
+                                <div class="line"></div>
+                                <div class="icon"><span class="flaticon-light-bulb"></span></div>
+                                <div class="media-body">
+                                    <h3 class="heading mb-3">Product Design Strategy</h3>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                        </div>
+                        <div class="col-md-4 d-flex align-self-stretch ftco-animate">
+                            <div class="services-1 color-2">
+                                <div class="line"></div>
+                                <div class="icon"><span class="flaticon-cyber"></span></div>
+                                <div class="media-body">
+                                    <h3 class="heading mb-3">Cyber Security &amp; Web Development</h3>
+                                </div>
                             </div>
-                            <div><button class="btn" type="submit">Send Message</button></div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="map">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d26361250.667320687!2d-113.75533773453304!3d36.24128894212527!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54eab584e432360b%3A0x1c3bb99243deb742!2sUnited%20States!5e0!3m2!1sen!2sbd!4v1574923227698!5m2!1sen!2sbd"
-                            frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- Contact End -->
+    </section>
+
+    <section class="ftco-section">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-lg-6 heading-section text-center ftco-animate">
+                    <h2 class="mb-4">More than <span>35+</span> years we provide <span>IT Solution</span></h2>
+                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="services-2 text-center">
+                        <div class="icon">
+                            <span class="flaticon-web-programming"></span>
+                        </div>
+                        <div class="text">
+                            <h3>Web Development</h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="{{ asset('front-assets/images/services.svg') }}" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-4">
+                    <div class="services-2 text-center">
+                        <div class="icon">
+                            <span class="flaticon-secure"></span>
+                        </div>
+                        <div class="text">
+                            <h3>Server Security</h3>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-counter img" id="section-counter">
+        <div class="container">
+            <div class="row no-gutters d-flex">
+                <div class="col-md-6 d-flex">
+                    <div class="img d-flex align-self-stretch"
+                        style="background-image:url('{{ asset('front-assets/images/about.jpg') }}');"></div>
+                </div>
+                <div class="col-md-6 p-3 pl-md-5 py-5 bg-primary">
+                    <div class="row justify-content-start pb-3">
+                        <div class="col-md-12 heading-section heading-section-white ftco-animate">
+                            <h2 class="mb-4">Consult us here in <span>ITSolution</span></h2>
+                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6 justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18 mb-4">
+                                <div class="text">
+                                    <strong class="number" data-number="750">0</strong>
+                                    <span>Project Complete</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18 mb-4">
+                                <div class="text">
+                                    <strong class="number" data-number="568">0</strong>
+                                    <span>Happy Clients</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18 mb-4">
+                                <div class="text">
+                                    <strong class="number" data-number="478">0</strong>
+                                    <span>Business Partners</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 justify-content-center counter-wrap ftco-animate">
+                            <div class="block-18 mb-4">
+                                <div class="text">
+                                    <strong class="number" data-number="780">0</strong>
+                                    <span>IT Consultant</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section services-section">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-md-6 heading-section text-center ftco-animate">
+                    <h2 class="mb-4">Our Exclusive <span>IT Solution</span> Services</h2>
+                </div>
+            </div>
+            <div class="row d-flex no-gutters">
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services d-block">
+                        <div class="line"></div>
+                        <div class="icon"><span class="flaticon-web-programming"></span></div>
+                        <div class="media-body">
+                            <h3 class="heading mb-3">Web Development</h3>
+                            <p> 203 Fake St. Mountain View, San Francisco, California, USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services d-block">
+                        <div class="line"></div>
+                        <div class="icon"><span class="flaticon-stats"></span></div>
+                        <div class="media-body">
+                            <h3 class="heading mb-3">Database Analysis</h3>
+                            <p>A small river named Duden flows by their place and supplies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services d-block">
+                        <div class="line"></div>
+                        <div class="icon"><span class="flaticon-secure"></span></div>
+                        <div class="media-body">
+                            <h3 class="heading mb-3">Server Security</h3>
+                            <p>A small river named Duden flows by their place and supplies.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 d-flex align-self-stretch ftco-animate">
+                    <div class="media block-6 services d-block">
+                        <div class="line"></div>
+                        <div class="icon"><span class="flaticon-presentation"></span></div>
+                        <div class="media-body">
+                            <h3 class="heading mb-3">UX/UI Strategy</h3>
+                            <p>A small river named Duden flows by their place and supplies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pt">
+        <div class="container">
+            <div class="row justify-content-center pb-5">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <h2 class="mb-4">Our Strategic <span>Work</span></h2>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="project">
+                        <div class="img">
+                            <img src="{{ asset('front-assets/images/work-1.jpg') }}" class="img-fluid"
+                                alt="Colorlib Template">
+                        </div>
+                        <div class="text text-center">
+                            <span>Web Development</span>
+                            <h3><a href="project.html">Best Solution for Information Technology</a></h3>
+                        </div>
+                        <a href="{{ asset('front-assets/images/work-1.jpg') }}"
+                            class="icon image-popup d-flex justify-content-center align-items-center">
+                            <span class="fa fa-expand"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="project">
+                        <div class="img">
+                            <img src="{{ asset('front-assets/images/work-2.jpg') }}" class="img-fluid"
+                                alt="Colorlib Template">
+                        </div>
+                        <div class="text text-center">
+                            <span>Web Application</span>
+                            <h3><a href="project.html">Creative Idea Build Up</a></h3>
+                        </div>
+                        <a href="{{ asset('front-assets/images/work-2.jpg') }}"
+                            class="icon image-popup d-flex justify-content-center align-items-center">
+                            <span class="fa fa-expand"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="project">
+                        <div class="img">
+                            <img src="{{ asset('front-assets/images/work-3.jpg') }}" class="img-fluid"
+                                alt="Colorlib Template">
+                        </div>
+                        <div class="text text-center">
+                            <span>Web Development</span>
+                            <h3><a href="project.html">Web Design Concept &amp; Web Analysis</a></h3>
+                        </div>
+                        <a href="{{ asset('front-assets/images/work-3.jpg') }}"
+                            class="icon image-popup d-flex justify-content-center align-items-center">
+                            <span class="fa fa-expand"></span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 ftco-animate">
+                    <div class="project">
+                        <div class="img">
+                            <img src="{{ asset('front-assets/images/work-4.jpg') }}" class="img-fluid"
+                                alt="Colorlib Template">
+                        </div>
+                        <div class="text text-center">
+                            <span>UI/UX Strategy</span>
+                            <h3><a href="project.html">Strategy for Enduring Customer Relationships</a></h3>
+                        </div>
+                        <a href="{{ asset('front-assets/images/work-4.jpg') }}"
+                            class="icon image-popup d-flex justify-content-center align-items-center">
+                            <span class="fa fa-expand"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section bg-light ftco-faqs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 order-md-last">
+                    <div class="img img-video d-flex align-self-stretch align-items-center justify-content-center justify-content-md-center mb-4 mb-sm-0"
+                        style="background-image:url('{{ asset('front-assets/images/about.jpg') }}');">
+                    </div>
+                    <div class="d-flex mt-3">
+                        <div class="img img-2 mr-md-2 w-100"
+                            style="background-image:url('{{ asset('front-assets/images/about-1.jpg') }}');"></div>
+                        <div class="img img-2 ml-md-2 w-100"
+                            style="background-image:url('{{ asset('front-assets/images/about-2.jpg') }}');"></div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="heading-section mb-5 mt-5 mt-lg-0">
+                        <h2 class="mb-3">Frequently Asks Questions</h2>
+                    </div>
+                    <div id="accordion" class="myaccordion w-100" aria-multiselectable="true">
+                        <div class="card">
+                            <div class="card-header p-0" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button href="#collapseOne"
+                                        class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+                                        data-parent="#accordion" data-toggle="collapse" aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <p class="mb-0">How can we help your business?</p>
+                                        <i class="fa" aria-hidden="true"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div class="collapse show" id="collapseOne" role="tabpanel" aria-labelledby="headingOne">
+                                <div class="card-body py-3 px-0">
+                                    <ol>
+                                        <li>Far far away, behind the word mountains</li>
+                                        <li>Consonantia, there live the blind texts</li>
+                                        <li>When she reached the first hills of the Italic Mountains</li>
+                                        <li>Bookmarksgrove, the headline of Alphabet Village</li>
+                                        <li>Separated they live in Bookmarksgrove right</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header p-0" id="headingTwo" role="tab">
+                                <h2 class="mb-0">
+                                    <button href="#collapseTwo"
+                                        class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+                                        data-parent="#accordion" data-toggle="collapse" aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <p class="mb-0">How long does it take to build a website?</p>
+                                        <i class="fa" aria-hidden="true"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div class="collapse" id="collapseTwo" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="card-body py-3 px-0">
+                                    <ol>
+                                        <li>Far far away, behind the word mountains</li>
+                                        <li>Consonantia, there live the blind texts</li>
+                                        <li>When she reached the first hills of the Italic Mountains</li>
+                                        <li>Bookmarksgrove, the headline of Alphabet Village</li>
+                                        <li>Separated they live in Bookmarksgrove right</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header p-0" id="headingThree" role="tab">
+                                <h2 class="mb-0">
+                                    <button href="#collapseThree"
+                                        class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+                                        data-parent="#accordion" data-toggle="collapse" aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <p class="mb-0">Can I help your IT Solution for business?</p>
+                                        <i class="fa" aria-hidden="true"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div class="collapse" id="collapseThree" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="card-body py-3 px-0">
+                                    <ol>
+                                        <li>Far far away, behind the word mountains</li>
+                                        <li>Consonantia, there live the blind texts</li>
+                                        <li>When she reached the first hills of the Italic Mountains</li>
+                                        <li>Bookmarksgrove, the headline of Alphabet Village</li>
+                                        <li>Separated they live in Bookmarksgrove right</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-header p-0" id="headingFour" role="tab">
+                                <h2 class="mb-0">
+                                    <button href="#collapseFour"
+                                        class="d-flex py-3 px-4 align-items-center justify-content-between btn btn-link"
+                                        data-parent="#accordion" data-toggle="collapse" aria-expanded="false"
+                                        aria-controls="collapseFour">
+                                        <p class="mb-0">What are those requirements for ITSolutions?</p>
+                                        <i class="fa" aria-hidden="true"></i>
+                                    </button>
+                                </h2>
+                            </div>
+                            <div class="collapse" id="collapseFour" role="tabpanel" aria-labelledby="headingTwo">
+                                <div class="card-body py-3 px-0">
+                                    <p>Far far away, behind the word mountains, far from the countries Vokalia and
+                                        Consonantia, there live the blind texts. Separated they live in Bookmarksgrove
+                                        right at the coast of the Semantics, a large language ocean.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ftco-section ftco-no-pb testimony-section"
+        style="background-image: url('{{ asset('front-assets/images/bg_1.jpg') }}');">
+        <div class="overlay-1"></div>
+        <div class="container-fluid">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
+                    <h2 class="mb-4">Our insights &amp; creative ideas</h2>
+                </div>
+            </div>
+            <div class="row ftco-animate">
+                <div class="col-md-12 testimonial">
+                    <div class="carousel-testimony owl-carousel ftco-owl">
+                        <div class="item">
+                            <div class="testimony-wrap d-flex align-items-stretch"
+                                style="background-image: url('{{ asset('front-assets/images/testimony-1.jpg') }}');">
+                                <div class="overlay"></div>
+                                <div class="text">
+                                    <div class="line"></div>
+                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="name">Donna Scott</p>
+                                    <span class="position">Marketing Manager</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap d-flex align-items-stretch"
+                                style="background-image: url('{{ asset('front-assets/images/testimony-2.jpg') }}');">
+                                <div class="overlay"></div>
+                                <div class="text">
+                                    <div class="line"></div>
+                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="name">Roger Scott</p>
+                                    <span class="position">Interface Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap d-flex align-items-stretch"
+                                style="background-image: url('{{ asset('front-assets/images/testimony-3.jpg') }}');">
+                                <div class="overlay"></div>
+                                <div class="text">
+                                    <div class="line"></div>
+                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="name">Roger Scott</p>
+                                    <span class="position">UI Designer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap d-flex align-items-stretch"
+                                style="background-image: url('{{ asset('front-assets/images/testimony-4.jpg') }}');">
+                                <div class="overlay"></div>
+                                <div class="text">
+                                    <div class="line"></div>
+                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="name">Roger Scott</p>
+                                    <span class="position">Web Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap d-flex align-items-stretch"
+                                style="background-image: url('{{ asset('front-assets/images/testimony-5.jpg') }}');">
+                                <div class="overlay"></div>
+                                <div class="text">
+                                    <div class="line"></div>
+                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p>
+                                    <p class="name">Roger Scott</p>
+                                    <span class="position">System Analyst</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section bg-light">
+        <div class="container">
+            <div class="row justify-content-center mb-5 pb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <h2>Read our latest blog</h2>
+                </div>
+            </div>
+            <div class="row d-flex">
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a href="blog-single.html" class="block-20"
+                            style="background-image: url('{{ asset('front-assets/images/image_1.jpg') }}');">
+                        </a>
+                        <div class="text mt-3 float-right d-block">
+                            <div class="d-flex align-items-center pt-2 mb-4 topp">
+                                <div class="one">
+                                    <span class="day">29</span>
+                                </div>
+                                <div class="two pl-1">
+                                    <span class="yr">2020</span>
+                                    <span class="mos">June</span>
+                                </div>
+                            </div>
+                            <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry justify-content-end">
+                        <a href="blog-single.html" class="block-20"
+                            style="background-image: url('{{ asset('front-assets/images/image_2.jpg') }}');">
+                        </a>
+                        <div class="text mt-3 float-right d-block">
+                            <div class="d-flex align-items-center pt-2 mb-4 topp">
+                                <div class="one">
+                                    <span class="day">29</span>
+                                </div>
+                                <div class="two pl-1">
+                                    <span class="yr">2020</span>
+                                    <span class="mos">June</span>
+                                </div>
+                            </div>
+                            <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 d-flex ftco-animate">
+                    <div class="blog-entry">
+                        <a href="blog-single.html" class="block-20"
+                            style="background-image: url('{{ asset('front-assets/images/image_3.jpg') }}');">
+                        </a>
+                        <div class="text mt-3 float-right d-block">
+                            <div class="d-flex align-items-center pt-2 mb-4 topp">
+                                <div class="one">
+                                    <span class="day">29</span>
+                                </div>
+                                <div class="two pl-1">
+                                    <span class="yr">2020</span>
+                                    <span class="mos">June</span>
+                                </div>
+                            </div>
+                            <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-appointment ftco-section img"
+        style="background-image: url('{{ asset('front-assets/images/bg_2.jpg') }}');">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 half ftco-animate">
+                    <h2 class="mb-4">Don't hesitate to contact us</h2>
+                    <form action="#" class="appointment">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Your Name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Email">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <div class="form-field">
+                                        <div class="select-wrap">
+                                            <div class="icon"><span class="fa fa-chevron-down"></span></div>
+                                            <select name="" id="" class="form-control">
+                                                <option value="">Services</option>
+                                                <option value="">Web Development</option>
+                                                <option value="">Database Analysis</option>
+                                                <option value="">Server Security</option>
+                                                <option value="">UX/UI Strategy</option>
+                                                <option value="">Branding</option>
+                                                <option value="">Applications</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
 @endsection
