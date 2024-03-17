@@ -224,7 +224,7 @@
                         </div>
                         <div class="text text-center">
                             <span>Web Development</span>
-                            <h3><a href="project.html">Best Solution for Information Technology</a></h3>
+                            <h3><a href="javascript:void(0);">Best Solution for Information Technology</a></h3>
                         </div>
                         <a href="{{ asset('front-assets/images/work-1.jpg') }}"
                             class="icon image-popup d-flex justify-content-center align-items-center">
@@ -240,7 +240,7 @@
                         </div>
                         <div class="text text-center">
                             <span>Web Application</span>
-                            <h3><a href="project.html">Creative Idea Build Up</a></h3>
+                            <h3><a href="javascript:void(0);">Creative Idea Build Up</a></h3>
                         </div>
                         <a href="{{ asset('front-assets/images/work-2.jpg') }}"
                             class="icon image-popup d-flex justify-content-center align-items-center">
@@ -256,7 +256,7 @@
                         </div>
                         <div class="text text-center">
                             <span>Web Development</span>
-                            <h3><a href="project.html">Web Design Concept &amp; Web Analysis</a></h3>
+                            <h3><a href="javascript:void(0);">Web Design Concept &amp; Web Analysis</a></h3>
                         </div>
                         <a href="{{ asset('front-assets/images/work-3.jpg') }}"
                             class="icon image-popup d-flex justify-content-center align-items-center">
@@ -272,7 +272,7 @@
                         </div>
                         <div class="text text-center">
                             <span>UI/UX Strategy</span>
-                            <h3><a href="project.html">Strategy for Enduring Customer Relationships</a></h3>
+                            <h3><a href="javascript:void(0);">Strategy for Enduring Customer Relationships</a></h3>
                         </div>
                         <a href="{{ asset('front-assets/images/work-4.jpg') }}"
                             class="icon image-popup d-flex justify-content-center align-items-center">
@@ -499,7 +499,7 @@
             <div class="row d-flex">
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry justify-content-end">
-                        <a href="blog-single.html" class="block-20"
+                        <a href="javascript:void(0);" class="block-20"
                             style="background-image: url('{{ asset('front-assets/images/image_1.jpg') }}');">
                         </a>
                         <div class="text mt-3 float-right d-block">
@@ -518,7 +518,7 @@
                 </div>
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry justify-content-end">
-                        <a href="blog-single.html" class="block-20"
+                        <a href="javascript:void(0);" class="block-20"
                             style="background-image: url('{{ asset('front-assets/images/image_2.jpg') }}');">
                         </a>
                         <div class="text mt-3 float-right d-block">
@@ -537,7 +537,7 @@
                 </div>
                 <div class="col-md-4 d-flex ftco-animate">
                     <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20"
+                        <a href="javascript:void(0);" class="block-20"
                             style="background-image: url('{{ asset('front-assets/images/image_3.jpg') }}');">
                         </a>
                         <div class="text mt-3 float-right d-block">
@@ -602,7 +602,7 @@
                             </div>
                             <div class="col-md-12">
                                 <div class="form-group">
-                                    <input type="submit" value="Send message" class="btn btn-primary py-3 px-4">
+                                    <input type="button" value="Send message" class="btn btn-primary py-3 px-4">
                                 </div>
                             </div>
                         </div>
