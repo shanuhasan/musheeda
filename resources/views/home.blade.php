@@ -23,7 +23,7 @@
         </div>
     </div>
 
-    <section class="ftco-intro">
+    {{-- <section class="ftco-intro">
         <div class="container">
             <div class="row justify-content-end">
                 <div class="col-md-7">
@@ -59,7 +59,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="ftco-section">
         <div class="container">
