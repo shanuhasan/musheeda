@@ -79,4 +79,9 @@ class HomeController extends Controller
     {
         return view('front.blogs');
     }
+
+    public function services()
+    {
+        return view('front.services');
+    }
 }

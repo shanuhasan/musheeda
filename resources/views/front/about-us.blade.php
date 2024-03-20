@@ -192,7 +192,7 @@
         </div>
     </section>
 
-    <section class="ftco-section bg-light ftco-faqs">
+    {{-- <section class="ftco-section bg-light ftco-faqs">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 order-md-last">
@@ -311,5 +311,5 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 @endsection

@@ -105,7 +105,7 @@
         </div>
     </section>
 
-    <section class="ftco-counter img" id="section-counter">
+    {{-- <section class="ftco-counter img" id="section-counter">
         <div class="container">
             <div class="row no-gutters d-flex">
                 <div class="col-md-6 d-flex">
@@ -157,7 +157,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     <section class="ftco-section services-section">
         <div class="container">
@@ -287,7 +287,7 @@
         </div>
     </section>
 
-    <section class="ftco-section bg-light ftco-faqs">
+    {{-- <section class="ftco-section bg-light ftco-faqs">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 order-md-last">
@@ -406,7 +406,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
 
     <section class="ftco-section ftco-no-pb testimony-section"

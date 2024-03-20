@@ -2,9 +2,9 @@
     <div class="container">
         <div class="row justify-content-between">
             <div class="col-12 col-md d-flex align-items-center">
-                <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="javascript:void(0);">+91
+                <p class="mb-0 phone"><span class="mailus">Phone no:</span> <a href="tel://7533825583">+91
                         7533825583</a>
-                    or <span class="mailus">Email us:</span> <a href="javascript:void(0);">info@musheeda.com</a></p>
+                    or <span class="mailus">Email us:</span> <a href="mailto:info@musheeda.com">info@musheeda.com</a></p>
             </div>
             <div class="col-12 col-md d-flex justify-content-md-end">
                 <div class="social-media">
@@ -27,7 +27,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
     <div class="container">
-        <a class="navbar-brand" href="index.html">MUSHEEDA<span> Solutions</span></a>
+        <a class="navbar-brand" href="/">MUSHEEDA<span> Solutions</span></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
             aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
