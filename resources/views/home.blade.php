@@ -8,12 +8,12 @@
         <div class="container">
             <div class="row no-gutters slider-text js-fullheight align-items-center" data-scrollax-parent="true">
                 <div class="col-md-8 ftco-animate mt-5 pt-md-5" data-scrollax=" properties: { translateY: '70%' }">
-                    <div class="row">
+                    {{-- <div class="row">
                         <div class="col-md-7">
                             <p class="mb-4 pl-md-5 line" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">
                             </p>
                         </div>
-                    </div>
+                    </div> --}}
                     <h1 class="mb-4" data-scrollax="properties: { translateY: '30%', opacity: 1.6 }">Top-Rated Software
                         Development Company
                     </h1>
@@ -159,7 +159,7 @@
         </div>
     </section> --}}
 
-    <section class="ftco-section services-section">
+    {{-- <section class="ftco-section services-section">
         <div class="container">
             <div class="row justify-content-center pb-5">
                 <div class="col-md-6 heading-section text-center ftco-animate">
@@ -209,9 +209,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
-    <section class="ftco-section ftco-no-pt">
+    {{-- <section class="ftco-section ftco-no-pt">
         <div class="container">
             <div class="row justify-content-center pb-5">
                 <div class="col-md-12 heading-section text-center ftco-animate">
@@ -285,7 +285,7 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> --}}
 
     {{-- <section class="ftco-section bg-light ftco-faqs">
         <div class="container">
@@ -415,7 +415,10 @@
         <div class="container-fluid">
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                    <h2 class="mb-4">Our insights &amp; creative ideas</h2>
+                    <h2 class="mb-4">Our Team</h2>
+                    <p class="mb-4">We are a leading software development company. We are a team of
+                        hard-working and experienced developers, designers, and everyone else crucial for
+                        transforming your business ideas into reality. </p>
                 </div>
             </div>
             <div class="row ftco-animate">
@@ -423,53 +426,14 @@
                     <div class="carousel-testimony owl-carousel ftco-owl">
                         <div class="item">
                             <div class="testimony-wrap d-flex align-items-stretch"
-                                style="background-image: url('{{ asset('front-assets/images/testimony-1.jpg') }}');">
-                                <div class="overlay"></div>
-                                <div class="text">
-                                    <div class="line"></div>
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Donna Scott</p>
-                                    <span class="position">Marketing Manager</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap d-flex align-items-stretch"
                                 style="background-image: url('{{ asset('front-assets/images/testimony-2.jpg') }}');">
                                 <div class="overlay"></div>
                                 <div class="text">
                                     <div class="line"></div>
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Roger Scott</p>
-                                    <span class="position">Interface Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap d-flex align-items-stretch"
-                                style="background-image: url('{{ asset('front-assets/images/testimony-3.jpg') }}');">
-                                <div class="overlay"></div>
-                                <div class="text">
-                                    <div class="line"></div>
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Roger Scott</p>
-                                    <span class="position">UI Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap d-flex align-items-stretch"
-                                style="background-image: url('{{ asset('front-assets/images/testimony-4.jpg') }}');">
-                                <div class="overlay"></div>
-                                <div class="text">
-                                    <div class="line"></div>
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Roger Scott</p>
-                                    <span class="position">Web Developer</span>
+                                    {{-- <p class="mb-4">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p> --}}
+                                    <p class="name">MOHD QASIM</p>
+                                    <span class="position">Software Developer</span>
                                 </div>
                             </div>
                         </div>
@@ -479,10 +443,23 @@
                                 <div class="overlay"></div>
                                 <div class="text">
                                     <div class="line"></div>
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Roger Scott</p>
-                                    <span class="position">System Analyst</span>
+                                    {{-- <p class="mb-4">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p> --}}
+                                    <p class="name">SHAHNAWAJ</p>
+                                    <span class="position">Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap d-flex align-items-stretch"
+                                style="background-image: url('{{ asset('front-assets/images/testimony-5.jpg') }}');">
+                                <div class="overlay"></div>
+                                <div class="text">
+                                    <div class="line"></div>
+                                    {{-- <p class="mb-4">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p> --}}
+                                    <p class="name">MD Yasin</p>
+                                    <span class="position">UI / UX Designer</span>
                                 </div>
                             </div>
                         </div>
@@ -500,63 +477,31 @@
                 </div>
             </div>
             <div class="row d-flex">
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="javascript:void(0);" class="block-20"
-                            style="background-image: url('{{ asset('front-assets/images/image_1.jpg') }}');">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center pt-2 mb-4 topp">
-                                <div class="one">
-                                    <span class="day">29</span>
-                                </div>
-                                <div class="two pl-1">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">June</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="javascript:void(0);" class="block-20"
-                            style="background-image: url('{{ asset('front-assets/images/image_2.jpg') }}');">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center pt-2 mb-4 topp">
-                                <div class="one">
-                                    <span class="day">29</span>
-                                </div>
-                                <div class="two pl-1">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">June</span>
+                @if ($blogs->isNotEmpty())
+                    @foreach ($blogs as $item)
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="blog-entry justify-content-end">
+                                <a href="{{ route('home.blogs.view', $item->slug) }}" class="block-20"
+                                    style="background-image: url('{{ asset('uploads/blogs/' . $item->image) }}');">
+                                </a>
+                                <div class="text mt-3 float-right d-block">
+                                    <div class="d-flex align-items-center pt-2 mb-4 topp">
+                                        <div class="one">
+                                            <span class="day">{{ date('d', strtotime($item->created_at)) }}</span>
+                                        </div>
+                                        <div class="two pl-1">
+                                            <span class="yr">{{ date('Y', strtotime($item->created_at)) }}</span>
+                                            <span class="mos">{{ date('F', strtotime($item->created_at)) }}</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="heading"><a
+                                            href="{{ route('home.blogs.view', $item->slug) }}">{{ $item->title }}</a>
+                                    </h3>
                                 </div>
                             </div>
-                            <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry">
-                        <a href="javascript:void(0);" class="block-20"
-                            style="background-image: url('{{ asset('front-assets/images/image_3.jpg') }}');">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center pt-2 mb-4 topp">
-                                <div class="one">
-                                    <span class="day">29</span>
-                                </div>
-                                <div class="two pl-1">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">June</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                        </div>
-                    </div>
-                </div>
+                    @endforeach
+                @endif
             </div>
         </div>
     </section>

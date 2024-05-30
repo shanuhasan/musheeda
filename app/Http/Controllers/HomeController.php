@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Blog;
 use App\Models\Page;
 use App\Models\Admin;
 use App\Mail\ContactEmail;
@@ -13,7 +14,10 @@ class HomeController extends Controller
 {
     public function index()
     {
-        return view('home');
+        $blogs = Blog::getRecords();
+        return view('home', [
+            'blogs' => $blogs
+        ]);
     }
 
     // public function page($slug)
@@ -73,11 +77,6 @@ class HomeController extends Controller
     public function contactUs()
     {
         return view('front.contact-us');
-    }
-
-    public function blogs()
-    {
-        return view('front.blogs');
     }
 
     public function services()

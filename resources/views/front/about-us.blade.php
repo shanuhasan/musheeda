@@ -21,8 +21,8 @@
         <div class="container">
             <div class="row justify-content-center pb-5">
                 <div class="col-lg-6 heading-section text-center ftco-animate">
-                    <h2 class="mb-4">More than <span>35+</span> years we provide <span>IT Solution</span></h2>
-                    <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                    <h2 class="mb-4">More than <span>2+</span> years we provide <span>IT Solution</span></h2>
+                    {{-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p> --}}
                 </div>
             </div>
             <div class="row">
@@ -33,7 +33,10 @@
                         </div>
                         <div class="text">
                             <h3>Web Development</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                            <p>Our developers are skilled in the most advanced backend technologies to form a robust
+                                software base. We guarantee you fully scalable, secure, and interactive web applications
+                                matching your business requirements.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -46,8 +49,10 @@
                             <span class="flaticon-secure"></span>
                         </div>
                         <div class="text">
-                            <h3>Server Security</h3>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                            <h3>Front-end & Full Stack</h3>
+                            <p>We use the latest front-end and full-stack solutions to meet the rapidly changing dynamics of
+                                your business needs. We assure you of interactive web fronts to keep you ahead in your game.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -65,8 +70,8 @@
                 <div class="col-md-6 p-3 pl-md-5 py-5 bg-primary">
                     <div class="row justify-content-start pb-3">
                         <div class="col-md-12 heading-section heading-section-white ftco-animate">
-                            <h2 class="mb-4">Consult us here in <span>ITSolution</span></h2>
-                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+                            <h2 class="mb-4">Consult us here in <span>Musheeda Solution</span></h2>
+                            {{-- <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p> --}}
                         </div>
                     </div>
                     <div class="row">
@@ -115,7 +120,10 @@
         <div class="container-fluid">
             <div class="row justify-content-center mb-5 pb-3">
                 <div class="col-md-7 text-center heading-section heading-section-white ftco-animate">
-                    <h2 class="mb-4">Our insights &amp; creative ideas</h2>
+                    <h2 class="mb-4">Our Team</h2>
+                    <p class="mb-4">We are a leading software development company. We are a team of
+                        hard-working and experienced developers, designers, and everyone else crucial for
+                        transforming your business ideas into reality. </p>
                 </div>
             </div>
             <div class="row ftco-animate">
@@ -123,53 +131,14 @@
                     <div class="carousel-testimony owl-carousel ftco-owl">
                         <div class="item">
                             <div class="testimony-wrap d-flex align-items-stretch"
-                                style="background-image: url('{{ asset('front-assets/images/testimony-1.jpg') }}');">
-                                <div class="overlay"></div>
-                                <div class="text">
-                                    <div class="line"></div>
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Donna Scott</p>
-                                    <span class="position">Marketing Manager</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap d-flex align-items-stretch"
                                 style="background-image: url('{{ asset('front-assets/images/testimony-2.jpg') }}');">
                                 <div class="overlay"></div>
                                 <div class="text">
                                     <div class="line"></div>
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Roger Scott</p>
-                                    <span class="position">Interface Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap d-flex align-items-stretch"
-                                style="background-image: url('{{ asset('front-assets/images/testimony-3.jpg') }}');">
-                                <div class="overlay"></div>
-                                <div class="text">
-                                    <div class="line"></div>
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Roger Scott</p>
-                                    <span class="position">UI Designer</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="item">
-                            <div class="testimony-wrap d-flex align-items-stretch"
-                                style="background-image: url('{{ asset('front-assets/images/testimony-4.jpg') }}');">
-                                <div class="overlay"></div>
-                                <div class="text">
-                                    <div class="line"></div>
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Roger Scott</p>
-                                    <span class="position">Web Developer</span>
+                                    {{-- <p class="mb-4">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p> --}}
+                                    <p class="name">MOHD QASIM</p>
+                                    <span class="position">Software Developer</span>
                                 </div>
                             </div>
                         </div>
@@ -179,10 +148,23 @@
                                 <div class="overlay"></div>
                                 <div class="text">
                                     <div class="line"></div>
-                                    <p class="mb-4">Far far away, behind the word mountains, far from the countries
-                                        Vokalia and Consonantia, there live the blind texts.</p>
-                                    <p class="name">Roger Scott</p>
-                                    <span class="position">System Analyst</span>
+                                    {{-- <p class="mb-4">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p> --}}
+                                    <p class="name">SHAHNAWAJ</p>
+                                    <span class="position">Developer</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="testimony-wrap d-flex align-items-stretch"
+                                style="background-image: url('{{ asset('front-assets/images/testimony-5.jpg') }}');">
+                                <div class="overlay"></div>
+                                <div class="text">
+                                    <div class="line"></div>
+                                    {{-- <p class="mb-4">Far far away, behind the word mountains, far from the countries
+                                        Vokalia and Consonantia, there live the blind texts.</p> --}}
+                                    <p class="name">MD Yasin</p>
+                                    <span class="position">UI / UX Designer</span>
                                 </div>
                             </div>
                         </div>

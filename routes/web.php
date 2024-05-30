@@ -3,10 +3,13 @@
 use Illuminate\Support\Str;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\Admin\UploadImageController;
+use App\Http\Controllers\Admin\BlogController as AdminBlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +21,10 @@ use App\Http\Controllers\Admin\DashboardController;
 | be assigned to the "web" middleware group. Make something great!
 |
 */
+
+Route::get('/admin', function () {
+    return redirect('/admin/login');
+});
 
 Route::get('/clear-cache', function () {
     Artisan::call('cache:clear');
@@ -32,8 +39,10 @@ Route::post('/contact-email', [HomeController::class, 'sendContactEmail'])->name
 
 Route::get('/about-us', [HomeController::class, 'aboutUs'])->name('home.about');
 Route::get('/contact-us', [HomeController::class, 'contactUs'])->name('home.contact');
-Route::get('/blogs', [HomeController::class, 'blogs'])->name('home.blogs');
 Route::get('/services', [HomeController::class, 'services'])->name('home.services');
+
+Route::get('/blogs', [BlogController::class, 'blogs'])->name('home.blogs');
+Route::get('/blogs/{slug}', [BlogController::class, 'blogView'])->name('home.blogs.view');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -57,6 +66,16 @@ Route::group(['middleware' => ['auth:admin'], 'prefix' => 'admin', 'as' => 'admi
     Route::get('/page/{id}/edit', [PageController::class, 'edit'])->name('page.edit');
     Route::put('/page/{id}', [PageController::class, 'update'])->name('page.update');
     Route::delete('/page/{id}', [PageController::class, 'destroy'])->name('page.delete');
+
+    //blogs
+    Route::get('/blogs', [AdminBlogController::class, 'index'])->name('blog.index');
+    Route::get('/blog/create', [AdminBlogController::class, 'create'])->name('blog.create');
+    Route::post('/blog/store', [AdminBlogController::class, 'store'])->name('blog.store');
+    Route::get('/blog/{id}/edit', [AdminBlogController::class, 'edit'])->name('blog.edit');
+    Route::put('/blog/{id}', [AdminBlogController::class, 'update'])->name('blog.update');
+    Route::delete('/blog/{id}', [AdminBlogController::class, 'destroy'])->name('blog.delete');
+
+    Route::post('/upload-image', [UploadImageController::class, 'create'])->name('media.create');
 
     Route::get('/getSlug', function (Request $request) {
         $slug = '';

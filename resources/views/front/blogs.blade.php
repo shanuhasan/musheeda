@@ -21,125 +21,36 @@
     <section class="ftco-section bg-light">
         <div class="container">
             <div class="row d-flex">
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="blog-single.html" class="block-20"
-                            style="background-image: url('{{ asset('front-assets/images/image_1.jpg') }}');">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center pt-2 mb-4 topp">
-                                <div class="one">
-                                    <span class="day">29</span>
-                                </div>
-                                <div class="two pl-1">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">June</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="blog-single.html" class="block-20"
-                            style="background-image: url('{{ asset('front-assets/images/image_2.jpg') }}');">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center pt-2 mb-4 topp">
-                                <div class="one">
-                                    <span class="day">29</span>
-                                </div>
-                                <div class="two pl-1">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">June</span>
+                @if ($blogs->isNotEmpty())
+                    @foreach ($blogs as $item)
+                        <div class="col-md-4 d-flex ftco-animate">
+                            <div class="blog-entry justify-content-end">
+                                <a href="{{ route('home.blogs.view', $item->slug) }}" class="block-20"
+                                    style="background-image: url('{{ asset('uploads/blogs/' . $item->image) }}');">
+                                </a>
+                                <div class="text mt-3 float-right d-block">
+                                    <div class="d-flex align-items-center pt-2 mb-4 topp">
+                                        <div class="one">
+                                            <span class="day">{{ date('d', strtotime($item->created_at)) }}</span>
+                                        </div>
+                                        <div class="two pl-1">
+                                            <span class="yr">{{ date('Y', strtotime($item->created_at)) }}</span>
+                                            <span class="mos">{{ date('F', strtotime($item->created_at)) }}</span>
+                                        </div>
+                                    </div>
+                                    <h3 class="heading"><a
+                                            href="{{ route('home.blogs.view', $item->slug) }}">{{ $item->title }}</a>
+                                    </h3>
                                 </div>
                             </div>
-                            <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20"
-                            style="background-image: url('{{ asset('front-assets/images/image_3.jpg') }}');">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center pt-2 mb-4 topp">
-                                <div class="one">
-                                    <span class="day">29</span>
-                                </div>
-                                <div class="two pl-1">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">June</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="blog-single.html" class="block-20"
-                            style="background-image: url('{{ asset('front-assets/images/image_4.jpg') }}');">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center pt-2 mb-4 topp">
-                                <div class="one">
-                                    <span class="day">29</span>
-                                </div>
-                                <div class="two pl-1">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">June</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry justify-content-end">
-                        <a href="blog-single.html" class="block-20"
-                            style="background-image: url('{{ asset('front-assets/images/image_5.jpg') }}');">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center pt-2 mb-4 topp">
-                                <div class="one">
-                                    <span class="day">29</span>
-                                </div>
-                                <div class="two pl-1">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">June</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 d-flex ftco-animate">
-                    <div class="blog-entry">
-                        <a href="blog-single.html" class="block-20"
-                            style="background-image: url('{{ asset('front-assets/images/image_6.jpg') }}');">
-                        </a>
-                        <div class="text mt-3 float-right d-block">
-                            <div class="d-flex align-items-center pt-2 mb-4 topp">
-                                <div class="one">
-                                    <span class="day">29</span>
-                                </div>
-                                <div class="two pl-1">
-                                    <span class="yr">2020</span>
-                                    <span class="mos">June</span>
-                                </div>
-                            </div>
-                            <h3 class="heading"><a href="#">Why Lead Generation is Key for Business Growth</a></h3>
-                        </div>
-                    </div>
-                </div>
+                    @endforeach
+                @endif
             </div>
             <div class="row mt-5">
                 <div class="col text-center">
                     <div class="block-27">
-                        <ul>
+                        {{-- <ul>
                             <li><a href="#">&lt;</a></li>
                             <li class="active"><span>1</span></li>
                             <li><a href="#">2</a></li>
@@ -147,8 +58,11 @@
                             <li><a href="#">4</a></li>
                             <li><a href="#">5</a></li>
                             <li><a href="#">&gt;</a></li>
-                        </ul>
+                        </ul> --}}
+
+                        {!! $blogs->links('pagination::bootstrap-4') !!}
                     </div>
+
                 </div>
             </div>
         </div>

@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>@yield('title') | Admin Panel | Musheeda Solutions</title>
 
+    <!-- Favicon -->
+    <link href="{{ asset('front-assets/images/musheeda.png') }}" rel="icon">
+
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -28,6 +31,10 @@
     <link rel="stylesheet" href="{{ asset('admin-assets/plugins/daterangepicker/daterangepicker.css') }}">
     <!-- summernote -->
     <link rel="stylesheet" href="{{ asset('admin-assets/plugins/summernote/summernote-bs4.min.css') }}">
+
+    <link rel="stylesheet" href="{{ asset('admin-assets/plugins/select2/css/select2.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('admin-assets/plugins/dropzone/min/dropzone.min.css') }}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 
 <body class="hold-transition sidebar-mini layout-fixed">
@@ -92,10 +99,23 @@
     <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
     {{-- <script src="{{ asset('admin-assets/dist/js/pages/dashboard.js') }}"></script> --}}
 
+    <script src="{{ asset('admin-assets/plugins/dropzone/min/dropzone.min.js') }}"></script>
+    <script src="{{ asset('admin-assets/plugins/select2/js/select2.min.js') }}"></script>
+
     <script>
+        $.ajaxSetup({
+            headers: {
+                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+            }
+        });
+
         $(function() {
             // Summernote
-            $('.summernote').summernote();
+            $(document).ready(function() {
+                $('.summernote').summernote({
+                    height: '300px'
+                });
+            });
         });
     </script>
     @yield('script')
